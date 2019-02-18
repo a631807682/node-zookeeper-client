@@ -17,14 +17,15 @@
   "scripts": {
     "pretest": "eslint index.js lib/*.js lib/jute/*.js",
     "test": "mocha --recursive --reporter spec test/lib/*",
-    "coverage":"nyc --reporter=lcov npm test"
+    "coverage": "nyc --reporter=lcov npm test"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=6.0.0"
   },
   "dependencies": {
+    "async": "~0.2.7",
     "underscore": "~1.4.4",
-    "async": "~0.2.7"
+    "util.promisify": "^1.0.0"
   },
   "licenses": [
     {

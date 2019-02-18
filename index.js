@@ -20,6 +20,7 @@ var net               = require('net');
 
 var async             = require('async');
 var u                 = require('underscore');
+var promisify         = require('util.promisify');
 
 var jute              = require('./lib/jute');
 var ACL               = require('./lib/ACL.js');
@@ -32,7 +33,6 @@ var CreateMode        = require('./lib/CreateMode.js');
 var Exception         = require('./lib/Exception');
 var Transaction       = require('./lib/Transaction.js');
 var ConnectionManager = require('./lib/ConnectionManager.js');
-
 
 // Constants.
 var CLIENT_DEFAULT_OPTIONS = {
@@ -908,7 +908,7 @@ var asyncMethods = ['create', 'remove', 'setData',
 
 asyncMethods.forEach(function(method) {
     Client.prototype[method + 'Async'] =
-        util.promisify(Client.prototype[method]);
+        promisify(Client.prototype[method]);
 });
 
 /**
