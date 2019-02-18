@@ -1,5 +1,13 @@
 # node-zookeeper-client
 
+---
+
+**Carefully**: 
+**This project fork from [alexguan/node-zookeeper-client](https://github.com/alexguan/node-zookeeper-client) .**
+**But what's different from it is that support `Promise` API and only support node >= 6.x .**
+
+---
+
 A pure Javascript [ZooKeeper](http://zookeeper.apache.org) client module for
 [Node.js](http://nodejs.org).
 
