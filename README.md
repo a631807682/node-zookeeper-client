@@ -2,9 +2,9 @@
 
 ---
 
-**Carefully**: 
-**This project fork from [alexguan/node-zookeeper-client](https://github.com/alexguan/node-zookeeper-client) .**
-**But what's different from it is that support `Promise` API and only support node >= 6.x .**
+**Carefully**:   
+**This project fork from [alexguan/node-zookeeper-client](https://github.com/alexguan/node-zookeeper-client) .**  
+**But what's different from it is that support `Promise` API and only support node >= 6.x .**  
 
 ---
 
