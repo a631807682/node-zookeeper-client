@@ -921,7 +921,6 @@ function createClient(connectionString, options) {
     return new Client(connectionString, options);
 }
 
-// export 'Client' that user can inherit it 
 exports.Client = Client;
 exports.createClient = createClient;
 exports.ACL = ACL;

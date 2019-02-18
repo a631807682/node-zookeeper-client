@@ -157,7 +157,6 @@
     "jsx-quotes": "error",
     "key-spacing": "off",
     "keyword-spacing": "error",
-    "linebreak-style": "error",
     "lines-around-comment": "error",
     "max-depth": "error",
     "max-len": ["error", 85],
